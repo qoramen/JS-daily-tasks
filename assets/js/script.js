@@ -53,38 +53,38 @@
 //     }
 // }
 
-const students = [
-    {
-        name: "Alice",
-        age: 20,
-        grade: 75,
-        major: "Computer Science"
-    },
-    {
-        name: "Bob",
-        age: 22,
-        grade: 82,
-        major: "Mechanical Engineering"
-    },
-    {
-        name: "Charlie",
-        age: 19,
-        grade: 90,
-        major: "Mathematics"
-    },
-    {
-        name: "Diana",
-        age: 21,
-        grade: 88,
-        major: "Biology"
-    },
-    {
-        name: "Ethan",
-        age: 23,
-        grade: 70,
-        major: "History"
-    }
-];
+// const students = [
+//     {
+//         name: "Alice",
+//         age: 20,
+//         grade: 75,
+//         major: "Computer Science"
+//     },
+//     {
+//         name: "Bob",
+//         age: 22,
+//         grade: 82,
+//         major: "Mechanical Engineering"
+//     },
+//     {
+//         name: "Charlie",
+//         age: 19,
+//         grade: 90,
+//         major: "Mathematics"
+//     },
+//     {
+//         name: "Diana",
+//         age: 21,
+//         grade: 88,
+//         major: "Biology"
+//     },
+//     {
+//         name: "Ethan",
+//         age: 23,
+//         grade: 70,
+//         major: "History"
+//     }
+// ];
 
 // let max = 80
 
@@ -98,16 +98,38 @@ const students = [
 //     }
 // }
 
-for (let index = 0; index < students.length; index++) {
-    if (students[index].grade >= 90) {
-        console.log(`Name: ${students[index].name}, Grade: ${students[index].grade} A, Major: ${students[index].major}`);
-    } else if (students[index].grade >= 85 && students[index].grade < 90) {
-        console.log(`Name: ${students[index].name}, Grade: ${students[index].grade} B, Major: ${students[index].major}`);
-    } else if (students[index].grade >= 80 && students[index].grade < 85) {
-        console.log(`Name: ${students[index].name}, Grade: ${students[index].grade} C, Major: ${students[index].major}`);
-    } else if (students[index].grade >= 75 && students[index].grade < 80) {
-        console.log(`Name: ${students[index].name}, Grade: ${students[index].grade} F, Major: ${students[index].major}`);
-    } else if (students[index].grade < 75) {
-        console.log(`Name: ${students[index].name}, Grade: ${students[index].grade} PASS, Major: ${students[index].major}`);
+// for (let index = 0; index < students.length; index++) {
+//     if (students[index].grade >= 90) {
+//         console.log(`Name: ${students[index].name}, Grade: ${students[index].grade} A, Major: ${students[index].major}`);
+//     } else if (students[index].grade >= 85 && students[index].grade < 90) {
+//         console.log(`Name: ${students[index].name}, Grade: ${students[index].grade} B, Major: ${students[index].major}`);
+//     } else if (students[index].grade >= 80 && students[index].grade < 85) {
+//         console.log(`Name: ${students[index].name}, Grade: ${students[index].grade} C, Major: ${students[index].major}`);
+//     } else if (students[index].grade >= 75 && students[index].grade < 80) {
+//         console.log(`Name: ${students[index].name}, Grade: ${students[index].grade} F, Major: ${students[index].major}`);
+//     } else if (students[index].grade < 75) {
+//         console.log(`Name: ${students[index].name}, Grade: ${students[index].grade} PASS, Major: ${students[index].major}`);
+//     }
+// }
+
+/* ---- Home Task 1 ---- */
+const arr = []
+
+for (let index = 1; index <= 20; index++) {
+    let prime = true
+
+    for (let i = 2; i < index; i++) {
+        if (index % i === 0) {
+            prime = false
+            break
+        }
+        
+    }
+    
+    if (prime) {
+        arr.push(index)   
     }
 }
+
+console.log(`1 dan 20 gacha bo'lgan tub sonlar: ${arr}`);
+
