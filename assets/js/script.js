@@ -113,23 +113,89 @@
 // }
 
 /* ---- Home Task 1 ---- */
-const arr = []
+// const arr = []
 
-for (let index = 1; index <= 20; index++) {
-    let prime = true
+// for (let index = 1; index <= 20; index++) {
+//     let prime = true
 
-    for (let i = 2; i < index; i++) {
-        if (index % i === 0) {
-            prime = false
-            break
-        }
-        
-    }
-    
-    if (prime) {
-        arr.push(index)   
-    }
-}
+//     for (let i = 2; i < index; i++) {
+//         if (index % i === 0) {
+//             prime = false
+//             break
+//         }
 
-console.log(`1 dan 20 gacha bo'lgan tub sonlar: ${arr}`);
+//     }
 
+//     if (prime) {
+//         arr.push(index)   
+//     } 
+// }
+
+// console.log(`1 dan 20 gacha bo'lgan tub sonlar: ${arr}`);
+
+/* Home Task 2 */
+
+// const order = {
+//     customer: {
+//         name: 'Asal',
+//         contact: {
+//             phone: '998901112233',
+//             email: ''
+//         }
+//     },
+//     items: [
+//         { name: 'Laptop', price: 1200 },
+//         { name: 'Mouse', price: 25 }
+//     ],
+//     payment: null,
+//     shipping: {
+//         address: {
+//             city: 'Tashkent',
+//             street: 'Yunusabad 5'
+//         },
+//         delivered: true
+//     }
+// };
+
+// const arr = []
+
+// for (let i = 0; i < order.items.length; i++) {
+//     arr.push(order.items[i].price)
+// }
+
+// console.log(`Customer Name: ${order.customer.name}`);
+// console.log(`Customer Phone: ${order.customer.contact.phone || 'Phone not available'}`);
+// console.log(`Customer Email: ${order.customer.contact.email || 'No email provided'}`);
+// console.log(`Payment: ${order.payment ?? 'Payment pending'}`);
+// console.log(`Total: ${total(...arr)}`);
+// delivery()
+// console.log(order.customer.loyaltyCard?.point ?? 'No loyalty points');
+// if (order.getTrackingCode?.()) {
+//     order.getTrackingCode?.()
+// }
+
+// function total(...numbers) {
+//     return numbers.reduce((acc, curr) => acc + curr, 0);
+// }
+
+// function delivery() {
+//     if (order.shipping.address.city) {
+//         console.log(`Shipping to: ${order.shipping.address.city}`);
+//     } else {
+//         console.log('Delivery address missing')
+//     }
+
+//     if (order.shipping.delivered) {
+//         console.log('Order has been delivered');
+//     }
+// }
+
+/* Home Task 3 */
+
+// let getPrompt = prompt("Please enter your city") ?? 'New Jersey'
+
+// if (getPrompt == '') {
+//     getPrompt = 'New Jersey'
+// }
+
+// console.log(getPrompt);
